@@ -4,7 +4,7 @@ function foodFactory (food) {
     console.log(food)
     return `
     <div class="foodItem">
-        <h1>${food.name}</h1>
+        <h2>${food.name}</h2>
         <p>${food.ethnicity}</p>
         <p>${food.category}</p>
     </div>
