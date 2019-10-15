@@ -10,9 +10,9 @@ function foodFactory (food) {
     </div>
     `
 }
+const foodContainer = document.querySelector(".foodList")
 
 function addFoodToDom (foodHTML) {
-    const foodContainer = document.querySelector(".foodList")
     foodContainer.innerHTML += foodHTML
 }
 
@@ -24,5 +24,3 @@ fetch("http://localhost:8088/food")
             addFoodToDom(foodAsHTML)
         })
     })
-
-
